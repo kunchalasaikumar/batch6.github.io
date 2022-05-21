@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Books Store</title>
+    <link rel="stylesheet" href="mybookstore.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstarpcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script defer src="mybookstore.js"></script>
+</head>
+<body style="background-color:powderblue;">
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <a href="mybookstore.html"><img src="23352601.jpg" class="logo"></a>
+            <input type="text" class="form-control" aria-label="Search through site content">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="cart.html"><i class="fa fa-shopping-basket"></i>cart</a></li>
+                <li><a href="signup-login.html">Signup</a></li>
+                <li><a href="signup-login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="header">
+        <div class="side-menu" id="side-menu">
+            <b>Click to navigate</b>
+            <ul>
+            <li><a href="#Action-and-adventures">Action</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Classic">Classic</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Comic-Novel">Comic Novel</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Crime">Crime</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Drama">Drama</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Horror">Horror</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Mythology">Mythology</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Satire">Satire</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Biography">Biography</a><i class="fa fa-angle-right"></i>
+            </li>
+            <li><a href="#Poetry">Poetry</a><i class="fa fa-angle-right"></i>
+            </li>
+            </ul>
+        </div> 
+    </section>
+    <a name="Action-and-adventures"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Action</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/A1ryaMDbIiL.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem11()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>The Hobbit by J.R.R. Tolkien</h3>
+                        <h5>Rs423.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" ><img src="https://m.media-amazon.com/images/I/51ewNXKhOzL.jpg"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem12()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>The Three Musketeers by Alexandre Dumas</h3>
+                        <h5>Rs277.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631251689l/4214._SY475_.jpg"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem13()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Life of Pi by Yann Martel</h3>
+                        <h5>Rs295.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Classic"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Classic</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/51N5qVjuKAL._SX309_BO1,204,203,200_.jpg"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem21()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>To Kill a Mockingbird by Harper Lee</h3>
+                        <h5>Rs227.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnRwkuQM8m5TkTsvcRCsXyJM5wEek0n-88Q&usqp=CAU"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem22()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>1984 by George Orwell</h3>
+                        <h5>Rs154.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" ><img src="https://m.media-amazon.com/images/I/51S3SRAdylS.jpg"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem23()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Romeo and Juliet by William Shakespeare</h3>
+                        <h5>Rs95.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Comic-Novel"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Comic Novel</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/A1LEz-p12TL.jpg"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem31()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>V for Vendetta by Alan Moore</h3>
+                        <h5>Rs899.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://media.wired.com/photos/5b04a88ffca80d7fb177bbf6/master/pass/tdkr_dvd.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem32()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Batman: The Dark Knight Returns by Frank Miller</h3>
+                        <h5>Rs962.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/71ITSz4R7kL.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem33()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Saga by Brian K Vaughan</h3>
+                        <h5>Rs737.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Crime"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Crime</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://rukminim2.flixcart.com/image/416/416/k34rki80/book/9/2/2/the-daily-sherlock-holmes-a-year-of-quotes-from-the-case-book-of-original-imafmbwefwpnfmhz.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem41()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Sherlock Holmes by Arthur Conan Doyle</h3>
+                        <h5>Rs226.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://images-na.ssl-images-amazon.com/images/I/81B9LhCS2AL.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem42()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Sherlock Holmes by Arthur Conan Doyle</h3>
+                        <h5>Rs172.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/51r0M+3m6FL._SX308_BO1,204,203,200_.jpg"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem43()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Murder on The Orient Express by Agatha Christie</h3>
+                        <h5>Rs231.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Drama"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Drama</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://rukminim2.flixcart.com/image/416/416/k55n0y80/regionalbooks/r/t/e/hamlet-by-william-shakespeare-original-imafnwmffzf5mbkr.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem51()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Hamlet by William Shakespeare</h3>
+                        <h5>Rs148.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1522544643l/39694161._SY475_.jpg"> </a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem52()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Waiting For Godot by Samuel Beckett</h3>
+                        <h5>Rs215.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/41rP792hHEL._SX311_BO1,204,203,200_.jpg"></a>
+                        <div class="overlay-right">
+                            
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem53()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>The Crucible by Arthur Miller</h3>
+                        <h5>Rs240.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Horror"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Horror</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1380344807i/699652.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem61()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>The Shining by Stephen King</h3>
+                        <h5>Rs659</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://images-na.ssl-images-amazon.com/images/I/41lfCsCLlzL.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem62()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>The Exorcist by William Peter Blatty</h3>
+                        <h5>Rs448.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://rukminim2.flixcart.com/image/416/416/k8ddoy80/regionalbooks/s/v/g/it-chapter-2-the-classic-book-from-stephen-king-release-original-imafqerfebtzrybj.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem63()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>It by Stephen King</h3>
+                        <h5>Rs311.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Mythology"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Mythology</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://bc-img.s3.ap-south-1.amazonaws.com/images/cover/385/9781405318204.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem71()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Mythology by Neil Philip and Wilkinson</h3>
+                        <h5>Rs400</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781647226787/bhagavad-gita-9781647226787_hr.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem72()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Bhagavad Gita The Song of God by Swami B. P. Puri</h3>
+                        <h5>Rs249.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://images-na.ssl-images-amazon.com/images/I/51L8g7LPaIL._SX302_BO1,204,203,200_.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem73()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>The Holy Bible: King James Version</h3>
+                        <h5>Rs412.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Satire"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Satire</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://i0.wp.com/paperlanternslit.com/wp-content/uploads/2021/03/AnimalFarm-1.jpg?resize=980%2C1493&ssl=1"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem81()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Animal Farm by George Orwell</h3>
+                        <h5>Rs117.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328015357l/11437531.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem82()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Catch-22 by Joseph Heller</h3>
+                        <h5>Rs274.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/81NIfUlv2DL.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem83()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Cat’s Cradle by Kurt Vonnegut</h3>
+                        <h5>Rs263.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Biography"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Biogrphy</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" >  <img src="https://images-na.ssl-images-amazon.com/images/I/81VStYnDGrL.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem91()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Steve Jobs by Walter Isaacson</h3>
+                        <h5>Rs390.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/51HiJot0LKL._SX342_SY445_QL70_ML2_.jpg"> </a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem92()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Edison: A Biography by Matthew Josephson</h3>
+                        <h5>Rs999.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://i0.wp.com/blas.com/wp-content/uploads/2019/09/the-autobiography-of-benjamin-franklin-1706-1757.jpg?fit=624%2C945&ssl=1"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem93()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>The Autobiography of Benjamin Franklin by Benjamin Franklin</h3>
+                        <h5>Rs199.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="Poetry"></a>
+    <section class="Action-and-adventures">
+        <div class="container">
+            <div class="title-box">
+                <h2>Poetry</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://images-na.ssl-images-amazon.com/images/I/415two26V6L._SX380_BO1,204,203,200_.jpg"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem101()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Where The Sidewalk Ends by Shel Silverstein</h3>
+                        <h5>Rs708.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://rukminim1.flixcart.com/image/416/416/kqidx8w0/book/v/d/2/the-odyssey-original-imag4hhz8keycena.jpeg?q=70"></a>
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem102()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>The Odyssey by Homer</h3>
+                        <h5>Rs255.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html" > <img src="https://rukminim1.flixcart.com/image/416/416/kqidx8w0/book/y/t/b/paradise-lost-original-imag4hvd9mbse7qh.jpeg?q=70"></
+                        <div class="overlay-right">
+                            <button type="button" class="btn btn-secondary" title="Add to Cart" onclick="fillitem103()">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Paradise Lost by John Milton</h3>
+                        <h5>Rs139.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="website-features">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-3 feature-box">
+        <img src=""C:\Users\saikumar\Downloads\online book store\original.jpg"">
+        <div class="feature-text">
+        <p><b>100% Original items</b> are availabe at company</p>
+        </div>
+        </div>
+        <div class="col-md-3 feature-box">
+        <img src="https://www.wisc-online.com/assetrepository/getfile?id=1415&getType=view&width=0&height=0">
+        <div class="feature-text">
+            <p><b>Return within 7 days</b> of receiving your order.</p>
+        </div>
+        </div>
+        <div class="col-md-3 feature-box">
+            <img src=""C:\Users\saikumar\Downloads\online book store\delivery.jpg"">
+                <div class="feature-text">
+                <p><b>Get free delivery for every</b> order on more than price.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Teturn Policy</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>About Us</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Follow Us On</h1>
+                        <p><i class="fa fa-facebook-official"></i> Facebook</p>
+                        <p><i class="fa fa-youtube-play"></i> YouTube</p>
+                        <p><i class="fa fa-linkedin"></i> Linkedin</p>
+                    </div>
+                    <div class="col-md-3 footer-image">
+                        <h1>Download App</h1>
+                        <img src="C:\Users\saikumar\Downloads\online book store\download.jpg">
+                    </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa fa-hear"></i>batch-6</p>
+        </div>
+    </section>
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
+</body>
+</html>

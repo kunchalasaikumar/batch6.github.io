@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="mybookstore.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstarpcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color:rgb(185, 230, 176);" onload="doShowAll()">
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <a href="C:\Users\saikumar\Downloads\online book store\mybookstore.html"><img src="C:\Users\saikumar\Downloads\online book store\23352601.jpg" class="logo"></a>
+            <input type="search" class="form-control" aria-label="Search through site content">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="signup-login.html">Signup</a></li>
+                <li><a href="signup-login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div style="margin-left: 65vh; font-size: 18px;"><b>Shopping Cart</b></div>
+    <br>
+    <form name=ShoppingList>
+		<div id="main">
+			<table style="color:red">
+				<tr>
+					<td><b>Item:</b><input type=text name=name></td>
+					<td><b>Price:</b><input type=text name=data></td>
+				</tr>
+
+				<tr>
+					<td>
+					    <input type=button value="Save"   onclick="SaveItem()"> 
+					    <input type=button value="Update" onclick="ModifyItem()"> 
+					    <input type=button value="Delete" onclick="RemoveItem()">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="items_table">
+			<h3><b>Shopping List</b></h3>
+			<table id=list></table><br><br>
+			<p>
+				<label> <input type=button value="Clear " onclick="ClearAll()">
+					<i>Delete all items</i></label>
+			</p><head>   
+                <script type = "text/javascript">
+                      function fun() {
+          
+          
+                         alert ("your order placed successfully");
+                      }
+                </script>     
+             </head>
+             
+             <body>   
+                <form >
+                    <a href="mybookstore.html"><h2><input type = "button" value = "Buy Prouduct" onclick = "fun();" /></h2></a>
+                </form>     
+             </body>
+            
+		</div>
+	</form>
+    <br>
+    <script>
+        function SaveItem() {
+            var name = document.forms.ShoppingList.name.value;
+            var data = document.forms.ShoppingList.data.value;
+            localStorage.setItem(name, data);
+            doShowAll();
+        }
+        function ModifyItem() {
+            var name1 = document.forms.ShoppingList.name.value;
+            var data1 = document.forms.ShoppingList.data.value;
+                    if (localStorage.getItem(name1) !=null)
+                    {
+                      localStorage.setItem(name1,data1);
+                      document.forms.ShoppingList.data.value = localStorage.getItem(name1);
+                    }
+            doShowAll();
+        }
+        function RemoveItem() {
+            var name = document.forms.ShoppingList.name.value;
+            document.forms.ShoppingList.data.value = localStorage.removeItem(name);
+            doShowAll();
+        }
+        function ClearAll() {
+            localStorage.clear();
+            doShowAll();
+        }
+        function doShowAll() {
+            if (CheckBrowser()) {
+                var key = "";
+                var list = "<tr><th>Item</th><th>Value</th></tr>\n";
+                var i = 0;
+                for (i = 0; i <= localStorage.length-1; i++) {
+                    key = localStorage.key(i);
+                    list += "<tr><td>" + key + "</td>\n<td>"
+                            + localStorage.getItem(key) + "</td></tr>\n";
+                }
+                if (list == "<tr><th>Item</th><th>Value</th></tr>\n") {
+                    list += "<tr><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n";
+                }
+                document.getElementById('list').innerHTML = list;
+            }
+        }
+        function CheckBrowser() {
+            if ('localStorage' in window && window['localStorage'] !== null) {
+                return true;
+            } else {
+                    return false;
+            }
+        }
+    </script>
+    
+        
+    
+    <!----Footer---->
+    <section class="footer">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>Useful Links</h1>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Use</p>
+                    <p>Teturn Policy</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Company</h1>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>About Us</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h1>Follow Us On</h1>
+                        <p><i class="fa fa-facebook-official"></i> Facebook</p>
+                        <p><i class="fa fa-youtube-play"></i> YouTube</p>
+                        <p><i class="fa fa-linkedin"></i> Linkedin</p>
+                    </div>
+                    <div class="col-md-3 footer-image">
+                        <h1>Download App</h1>
+                        <img src="C:\Users\saikumar\Downloads\online book store\download.jpg">
+                    </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa fa-hear"></i>batch-6</p>
+        </div>
+    </section>
+</body>
+</html>
